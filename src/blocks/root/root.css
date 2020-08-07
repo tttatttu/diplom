@@ -1,6 +1,5 @@
 @import url(../header/header.css);
 @import url(../search/search.css);
-@import url(./__fone/root__fone.css);
 
 .root {
   font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;

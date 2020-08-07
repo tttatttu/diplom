@@ -1,6 +1,6 @@
 {
   "name": "news_analizer",
-  "homepage": "https://github.com/tttatttu/diplom#readme",
+  "homepage": "https://github.com/tttatttu/diplom",
   "version": "0.0.1",
   "description": "Анализатор новостей",
   "main": "./src/pages/index/index.js",
