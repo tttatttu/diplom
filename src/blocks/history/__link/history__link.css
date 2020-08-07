@@ -1,0 +1,17 @@
+.history__link {
+  text-decoration: none;
+  color: #1a1b22
+}
+
+@media screen and (max-width: 768px) {
+  .history__link {
+    max-width: 155px;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .history__link {
+    display: none;
+  }
+}

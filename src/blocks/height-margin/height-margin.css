@@ -1,0 +1,16 @@
+.height-margin {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .height-margin {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .height-margin {
+    margin-top: 32px;
+  }
+}

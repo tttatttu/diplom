@@ -1,0 +1,25 @@
+.button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

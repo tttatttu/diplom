@@ -1,0 +1,9 @@
+.menu__links_style_footer {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+  .menu__links_style_footer {
+    flex-direction: column;
+  }
+}

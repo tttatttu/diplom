@@ -1,0 +1,19 @@
+.search__subtitle_index {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .search__subtitle_index {
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search__subtitle_index {
+    margin-bottom: 64px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

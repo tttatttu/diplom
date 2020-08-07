@@ -1,0 +1,19 @@
+.tech__title {
+    max-width: 345px;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .tech__title  {
+    max-width: 336px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tech__title  {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+

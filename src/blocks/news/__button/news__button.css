@@ -1,0 +1,30 @@
+.news__button {
+  max-width: 288px;
+  padding-left: 84px;
+  padding-right: 84px;
+  background: #fff;
+  border-radius: 80px;
+  display: flex;
+  margin: 64px auto 0 auto;
+}
+
+.news__button:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+  .news__button {
+    margin-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .news__button {
+    margin-top: 12px;
+    padding-left: 84px;
+    padding-right: 84px;
+    width: 100%;
+  }
+}

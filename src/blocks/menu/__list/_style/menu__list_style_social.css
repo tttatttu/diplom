@@ -1,0 +1,7 @@
+.menu__list_style_social {
+  margin-left: 28px;
+}
+
+menu__list_style_social:nth-child(1) {
+  margin-left: 0;
+}

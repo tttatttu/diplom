@@ -1,0 +1,32 @@
+@import url(../menu/menu.css);
+@import url(./__copyright/footer__copyright.css);
+@import url(../content-margin/content-margin.css);
+@import url(../height-margin/height-margin.css);
+@import url(./__social/footer__social.css);
+
+.footer {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-family: "Roboto";
+  font-weight: normal;
+  width: 85.5%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    grid-template-rows: 1fr auto;
+    position: relative;
+  }
+}

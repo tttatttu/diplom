@@ -1,0 +1,29 @@
+@import url(../../blocks/menu/menu.css);
+@import url(./__logo/header__logo.css);
+@import url(../content-margin/content-margin.css);
+@import url(../header-line/header-line.css);
+
+.header {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 23px;
+  width: 85.5%;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 90%;
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+}

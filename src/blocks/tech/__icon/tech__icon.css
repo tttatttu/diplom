@@ -1,0 +1,22 @@
+@import url(../__image/tech__image.css);
+@import url(../__text/tech__text.css);
+
+.tech__icon {
+    max-width: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.tech__icon:nth-child(1) {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .tech__icon {
+    margin-left: 0;
+    justify-content: space-between;
+  }
+}

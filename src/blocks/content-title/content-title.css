@@ -1,0 +1,11 @@
+@import url(./_size/content-title_size_m.css);
+@import url(./_size/content-title_size_x.css);
+@import url(./_size/content-title_size_s.css);
+@import url(./_colour/content-title_colour_black.css);
+@import url(./_colour/content-title_colour_gray.css);
+
+.content-title {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  margin: 0;
+}

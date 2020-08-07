@@ -1,0 +1,9 @@
+@import url(./__preloader/search-waiting__preloader.css);
+@import url(../content-margin/content-margin.css);
+@import url(./__subtitle/search-waiting__subtitle.css);
+
+.search-waiting {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  max-width: 356px;
+  margin: 0 auto;
+}

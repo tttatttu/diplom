@@ -1,0 +1,15 @@
+.footer__social {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__social:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__social {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+}

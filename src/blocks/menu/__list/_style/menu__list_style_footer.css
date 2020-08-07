@@ -1,0 +1,20 @@
+.menu__list_style_footer {
+  margin-left: 40px;
+}
+
+.menu__list_style_footer:nth-child(1) {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .menu__list_style_footer {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu__list_style_footer {
+    margin-bottom: 26px;
+  }
+}

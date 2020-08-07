@@ -1,0 +1,8 @@
+.root__fone {
+  width: 100%;
+  position: absolute;
+  background-image: url(../../../images/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

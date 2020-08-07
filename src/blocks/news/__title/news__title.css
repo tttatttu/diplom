@@ -1,0 +1,10 @@
+.news__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .news__title {
+    margin-bottom: 10px;
+  }
+}

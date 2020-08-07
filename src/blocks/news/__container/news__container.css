@@ -1,0 +1,5 @@
+.news__container {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+}

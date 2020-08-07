@@ -1,0 +1,26 @@
+@import url(./_isactive/menu__link_isactive.css);
+@import url(./_isactive/menu__link_isactive_about.css);
+@import url(./_style/menu__link_style_about.css);
+@import url(./_style/menu__link_style_footer.css);
+@import url(./_style/menu__link_style_header.css);
+
+.menu__link {
+  display: flex;
+  padding-bottom: 23px;
+  margin-bottom: -23px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__link {
+    padding-bottom: 16px;
+    margin-bottom: -16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu__link {
+    padding-bottom: 13px;
+    margin-bottom: -13px;
+  }
+}

@@ -1,0 +1,39 @@
+@import url(./__title/tech__title.css);
+@import url(./__icons/tech__icons.css);
+
+.tech {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  display: flex;
+  background: #f5f6f7;
+  padding-top: 80px;
+  padding-bottom: 97px;
+  /* width: 85%; */
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+@media screen and (max-width: 1286px) {
+  .tech  {
+    flex-direction: column;
+    justify-content: start;
+    padding: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tech  {
+    padding: 40px;
+  }
+}
+
+/* @media screen and (max-width: 670px) {
+  .tech  {
+    flex-wrap: wrap;
+  }
+} */
+
+@media screen and (max-width: 400px) {
+  .tech  {
+    padding: 36px 16px 52px 16px;
+  }
+}

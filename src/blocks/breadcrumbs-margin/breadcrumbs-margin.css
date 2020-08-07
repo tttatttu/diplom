@@ -1,0 +1,9 @@
+.breadcrumbs-margin {
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumbs-margin {
+    padding-bottom: 24px;
+  }
+}

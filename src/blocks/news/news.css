@@ -1,0 +1,12 @@
+@import url(./__cards/news__cards.css);
+@import url(./__text/news__text.css);
+@import url(./__button/news__button.css);
+@import url(./__page/news__page.css);
+
+.news {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}

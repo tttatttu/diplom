@@ -1,0 +1,32 @@
+.search__button {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-left: 54px;
+  padding-right: 53px;
+  background: #2f71e5;
+  color: #fff;
+  z-index: 1;
+  border-radius: 100px;
+  height: 100%;
+}
+
+.search__button:hover {
+  background: #347eff;
+}
+
+@media screen and (max-width: 768px) {
+  .search__button {
+    padding-left: 50px;
+    padding-right: 49px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search__button {
+    padding-left: 114px;
+    padding-right: 113px;
+    position: static;
+  }
+}

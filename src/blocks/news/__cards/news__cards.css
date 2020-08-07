@@ -1,0 +1,30 @@
+@import url(../__card/news__card.css);
+
+.news__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 400px));
+  row-gap: 16px;
+  column-gap: 16px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .news__cards {
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news__cards {
+    row-gap: 8px;
+    column-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .news__cards {
+    grid-template-columns: 1fr;
+  }
+}

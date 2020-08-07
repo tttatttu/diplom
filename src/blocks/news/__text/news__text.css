@@ -1,0 +1,27 @@
+@import url(../__link/news__link.css);
+
+.news__text {
+  max-width: 1223px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .news__text {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .news__text {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .news__text {
+    margin-bottom: 36px;
+  }
+}

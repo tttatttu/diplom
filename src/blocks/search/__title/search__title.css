@@ -1,0 +1,7 @@
+@import url(./_analytics/search__title_analytics.css);
+
+.search__title {
+  color: #1a1b22;
+  margin-top: 0;
+  margin-bottom: 24px;
+}

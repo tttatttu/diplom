@@ -1,0 +1,24 @@
+@import url(./__subtitle/clients__subtitle.css);
+@import url(./__title/clients__title.css);
+
+.clients {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  max-width: 815px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 92px;
+}
+
+@media screen and (max-width: 768px) {
+  .clients {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .clients {
+    padding-bottom: 28px;
+  }
+}

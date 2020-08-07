@@ -1,0 +1,11 @@
+.menu__links_style_social {
+  display: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .menu__links_style_social {
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+}
