@@ -33,15 +33,22 @@ module.exports = {
       exclude: /node_modules/,
         },
         {
-          test: /\.css$/i, 
-          use: [(isDev ? "style-loader" : MiniCssExtractPlugin.loader),
-          {
-            loader: "css-loader",
+          test: /\.css$/i,
+          use: [(isDev ? 'style-loader' : {
+            loader: MiniCssExtractPlugin.loader,
             options: {
-              importLoaders: 2
+              publicPath: '../'
             }
-          },
-          "postcss-loader"]
+          }),
+
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 2,
+              }
+            },
+            'postcss-loader',
+          ]
         },
         {
           test: /\.(png|jpg|gif|ico|svg)$/i,
@@ -59,7 +66,7 @@ module.exports = {
         }
       ]
     },
-  plugins: [ 
+  plugins: [
     new MiniCssExtractPlugin({
         filename: "./css/[name].[contenthash].css"
     }),
