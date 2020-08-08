@@ -1,0 +1,19 @@
+@import url(../__image/history__image.css);
+@import url(../__title/history__title.css);
+@import url(../__mail/history__mail.css);
+
+.history__autor {
+  display: grid;
+  grid-template-rows: 32px 32px;
+  grid-template-columns: 64px 1fr;
+  column-gap: 16px;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .history__autor {
+    grid-template-rows: 24px 24px;
+    grid-template-columns: 48px 1fr;
+    column-gap: 12px;
+  }
+}

@@ -1,0 +1,28 @@
+@import url(./__data/tabel__data.css);
+@import url(./__days/tabel__days.css);
+@import url(./__line/tabel__line.css);
+@import url(./__signature/tabel__signature.css);
+@import url(./__section/tabel__section.css);
+@import url(./__title/tabel__title.css);
+
+.tabel {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 1440px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .tabel {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tabel {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}

@@ -1,0 +1,17 @@
+.content-title_size_x {
+  font-size: 40px;
+  line-height: 46px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-title_size_x {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content-title_size_x {
+    line-height: 40px;
+  }
+}

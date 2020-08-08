@@ -1,0 +1,10 @@
+@import url(./_colour/content-subtitle_colour_black.css);
+
+.content-subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}

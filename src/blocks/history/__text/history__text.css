@@ -1,0 +1,20 @@
+@import url(../__link/history__link.css);
+
+.history__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .history__text {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .history__text {
+    max-width: 160px;
+  }
+}

@@ -1,0 +1,11 @@
+.tabel__signature {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 6px;
+  padding-top: 4px;
+}

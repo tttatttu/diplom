@@ -1,0 +1,8 @@
+.menu__link_style_about {
+  font-weight: 500;
+  color: #b6bcbf;
+}
+
+.menu__link_style_about:hover {
+  color: #1a1b22;
+}

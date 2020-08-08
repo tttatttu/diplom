@@ -1,0 +1,29 @@
+@import url(./__item/breadcrumbs__item.css);
+@import url(./__items/breadcrumbs__items.css);
+@import url(./__link/breadcrumbs__link.css);
+@import url(./__link/_off/breadcrumbs__link_off.css);
+
+.breadcrumbs {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  display: flex;
+}
+
+.breadcrumbs li:after {
+  content: "/";
+}
+
+.breadcrumbs li:last-of-type:after {
+  content: " ";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs {
+    padding-top: 36px;
+  }
+}
+
+@media (max-width: 450px) {
+  .breadcrumbs {
+    display: none;
+  }
+}

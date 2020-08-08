@@ -1,0 +1,16 @@
+.search__input {
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1b22;
+  z-index: 1;
+  border: none;
+}
+
+@media screen and (max-width: 400px) {
+  .search__input {
+    max-width: 256px;
+  }
+}

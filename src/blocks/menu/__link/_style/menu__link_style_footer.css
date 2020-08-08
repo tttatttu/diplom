@@ -1,0 +1,8 @@
+.menu__link_style_footer {
+  color: #1a1b22;
+}
+
+.menu__link_style_footer:hover {
+  color: #b6bcbf;
+  transition: color .3s;
+}

@@ -1,0 +1,19 @@
+@import url(./_style/menu__links_style_footer.css);
+@import url(./_style/menu__links_style_social.css);
+
+.menu__links {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .menu__links {
+    font-size: 16px;
+  }
+}

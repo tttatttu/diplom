@@ -1,0 +1,6 @@
+.menu__link_isactive {
+  color: #fff;
+  display: flex;
+  border-bottom: 2px solid #fff;
+  text-decoration: none;
+}

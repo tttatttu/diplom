@@ -1,0 +1,7 @@
+@import url(./__links/menu__links.css);
+@import url(./__link/menu__link.css);
+@import url(./__list/menu__list.css);
+
+.menu {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+}

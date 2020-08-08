@@ -1,0 +1,9 @@
+.header-line {
+  border-top: 1px;
+  border-top-style: solid;
+  color: #d1d2d6;
+  opacity: .5;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

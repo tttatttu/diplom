@@ -1,0 +1,13 @@
+.search__title_analytics {
+  padding-bottom: 0;
+}
+
+.search__title_analytics:nth-child(1) {
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width: 400px) {
+  .search__title_analytics:nth-child(1) {
+    padding-bottom: 12px;
+  }
+}

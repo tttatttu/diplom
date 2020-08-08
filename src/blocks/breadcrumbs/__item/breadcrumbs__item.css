@@ -1,0 +1,7 @@
+.breadcrumbs__item {
+  margin-right: 5px;
+}
+
+.breadcrumbs__item:last-of-type {
+  margin-right: 0;
+}

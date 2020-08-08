@@ -1,0 +1,19 @@
+@import url(./_footer/tabel__points_footer.css);
+
+.tabel__points {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin-top: 16px;
+  margin-bottom: 0;
+  color: #b6bcbf;
+}
+
+@media screen and (max-width: 400px) {
+  .tabel__points {
+    display: none;
+  }
+}

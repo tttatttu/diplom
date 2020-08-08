@@ -1,0 +1,29 @@
+@import url(./__button/search__button.css);
+@import url(./__field/search__field.css);
+@import url(./__form/search__form.css);
+@import url(./__input/search__input.css);
+@import url(../height-margin/height-margin.css);
+@import url(./__title/search__title.css);
+@import url(./__subtitle/search__subtitle.css);
+@import url(./__span-accent/search__span-accent.css);
+@import url(../content-title/content-title.css);
+
+.search {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  max-width: 610px;
+  color: #fff;
+}
+
+@media screen and (max-width: 530px) {
+  .search {
+    max-width: 448px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search {
+    max-width: 288px;
+  }
+}

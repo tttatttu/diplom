@@ -1,0 +1,14 @@
+@import url(../__images/news__images.css);
+@import url(../__info/news__info.css);
+
+.news__card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.news__card:hover {
+  box-shadow: 0 0 30px rgba(12, 63, 102, 0.1);
+}

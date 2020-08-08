@@ -1,0 +1,12 @@
+.tech__text {
+    padding-top: 13px;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .tech__text  {
+    padding-bottom: 10px;
+
+  }
+}

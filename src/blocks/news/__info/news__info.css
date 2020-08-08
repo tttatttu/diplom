@@ -1,0 +1,26 @@
+@import url(../__data/news__data.css);
+@import url(../__title/news__title.css);
+@import url(../__paragraph/news__paragraph.css);
+@import url(../__subtitle/news__subtitle.css);
+@import url(../__container/news__container.css);
+
+.news__info {
+  padding: 20px 24px 24px 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px auto 20px;
+  row-gap: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .news__info {
+    padding: 12px 16px 16px 16px;
+    row-gap: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .news__info {
+    row-gap: 16px;
+  }
+}

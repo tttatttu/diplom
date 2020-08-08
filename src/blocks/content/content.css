@@ -1,0 +1,15 @@
+@import url(../content-margin/content-margin.css);
+@import url(../search-news/search-news.css);
+@import url(../news/news.css);
+@import url(../author/author.css);
+@import url(./__body/content__body.css);
+
+
+.content {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}

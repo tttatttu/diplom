@@ -1,0 +1,25 @@
+.history__button {
+  display: none;
+}
+
+.history__button:hover {
+  opacity: .6;
+  background: #fff;
+}
+
+@media screen and (max-width: 400px) {
+  .history__button {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #1a1b22;
+    box-sizing: border-box;
+    border-radius: 80px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    margin-left: 16px;
+    padding-right: 16px;
+    margin-top: 16px;
+  }
+}

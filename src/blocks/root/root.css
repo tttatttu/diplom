@@ -1,0 +1,29 @@
+@import url(../header/header.css);
+@import url(../search/search.css);
+
+.root {
+  font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  background-image: url(../../images/header.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .root {
+    margin-left: 104px;
+    margin-right: 104px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .root {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
