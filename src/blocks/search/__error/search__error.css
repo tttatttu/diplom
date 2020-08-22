@@ -1,0 +1,12 @@
+.search__error {
+  font-size: 12px;
+  line-height: 14px;
+  color: #f00;
+  display: block;
+  margin: 4px 0 0 6px;
+  box-sizing: border-box;
+  height: 15px;
+  position: absolute;
+  left: 24px;
+  bottom: 0;
+}

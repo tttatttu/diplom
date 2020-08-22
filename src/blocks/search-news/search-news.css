@@ -1,6 +1,7 @@
 @import url(../search-error/search-error.css);
 @import url(../search-waiting/search-waiting.css);
 @import url(../content-margin/content-margin.css);
+@import url(../hidden/hidden.css);
 
 .search-news {
   font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;

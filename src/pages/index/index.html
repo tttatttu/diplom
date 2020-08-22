@@ -30,96 +30,59 @@
       <p class="content-subtitle search__subtitle search__subtitle_index">Введите в поиске любую тему и узнайте,
         насколько популярной она была в новостях за
         прошедшую неделю.</p>
-      <form class="search__field" name="search">
+      <form class="search__field" name="search" novalidate>
         <div class="button search__form">
-          <input type="text" name="text" class="search__input" minlength="2" maxlength="30" required placeholder="Введите тему новости">
+          <input type="text" name="text" id="text" class="search__input" minlength="2" maxlength="30" required
+            placeholder="Введите тему новости">
+          <span class="search__error"></span>
         </div>
-        <button type="submit" class="button search__button">Искать</button>
+        <button type="submit" class="button search__button" disabled>Искать</button>
       </form>
     </div>
   </div>
   <main class="content">
-    <div class="content__body">
-      <section class="search-news content-margin">
-        <div class="search-waiting">
+    <section class="content__body hidden">
+      <div class="search-news content-margin">
+        <div class="search-waiting hidden">
           <i class="search-waiting__preloader"></i>
           <h2 class="visually-hidden">Поиск</h2>
           <p class="content-subtitle search-waiting__subtitle">Идет поиск новостей...</p>
         </div>
-        <div class="search-error">
+        <div class="search-error hidden">
           <img class="search-error__icon" src="<%=require('../../images/icon-error.png').default%>"
             alt="Иконка ошибки поиска">
           <h2 class="content-title content-title_size_s content-title_colour_black search-error__title">Ничего не
             найдено</h2>
           <p class="content-subtitle search-error__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
         </div>
-        <div class="news">
+        <div class="news hidden">
           <div class="news__text">
             <h2 class="content-title content-title_colour_black content-title_size_x">Результаты поиска</h2>
             <a class="content-subtitle news__link" href="./analytics.html">Посмотреть аналитику&nbsp;&rang;</a>
           </div>
           <div class="news__cards">
 
-            <div class="news__card">
-              <a class="news__page" href="https://lenta.ru" target="_blank">
-                <img class="news__images" src="<%=require('../../images/card1.jpg').default%>" alt="Обложка">
-                <div class="news__info">
-                  <p class="news__data">2 августа, 2019</p>
-                  <div class="news__container">
-                    <h3 class="content-title content-title_size_s content-title_colour_black news__title">Национальное
-                      достояние – парки
-                    </h3>
-                    <p class="news__subtitle">В 2016 году Америка отмечала важный юбилей: сто
-                      лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и
-                      сегодня
-                      каждый может приобщиться к природе.</p>
+            <template id="cardlist-template" style="display: none;">
+              <article class="news__card">
+                <a class="news__page" href="" target="_blank">
+                  <img class="news__images" src="" alt="Обложка">
+                  <div class="news__info">
+                    <p class="news__data"></p>
+                    <div class="news__container">
+                      <h3 class="content-title content-title_size_s content-title_colour_black news__title"></h3>
+                      <p class="news__subtitle"></p>
+                    </div>
+                    <p class="news__paragraph"></p>
                   </div>
-                  <p class="news__paragraph">Лента.ру</p>
-                </div>
-              </a>
-            </div>
-            <div class="news__card">
-              <a class="news__page" href="https://meduza.io" target="_blank">
-                <img class="news__images" src="<%=require('../../images/card2.jpg').default%>" alt="Обложка">
-                <div class="news__info">
-                  <p class="news__data">2 августа, 2019</p>
-                  <div class="news__container">
-                    <h3 class="content-title content-title_size_s content-title_colour_black news__title">Национальное
-                      достояние – парки
-                    </h3>
-                    <p class="news__subtitle">В 2016 году Америка отмечала важный юбилей: сто
-                      лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и
-                      сегодня
-                      каждый может приобщиться к природе.</p>
-                  </div>
-                  <p class="news__paragraph">Медуза</p>
-                </div>
-              </a>
-            </div>
-            <div class="news__card">
-              <a class="news__page" href="https://zona.media" target="_blank">
-                <img class="news__images" src="<%=require('../../images/card3.jpg').default%>" alt="Обложка">
-                <div class="news__info">
-                  <p class="news__data">2 августа, 2019</p>
-                  <div class="news__container">
-                    <h3 class="content-title content-title_size_s content-title_colour_black news__title">Национальное
-                      достояние – парки
-                    </h3>
-                    <p class="news__subtitle">В 2016 году Америка отмечала важный юбилей: сто
-                      лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и
-                      сегодня
-                      каждый может приобщиться к природе.</p>
-                  </div>
-                  <p class="news__paragraph">Медиазона</p>
-                </div>
-              </a>
-            </div>
+                </a>
+              </article>
+            </template>
 
           </div>
           <button type="submit" class="button news__button">Показать еще</button>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <section class="author content-margin height-margin">
       <img class="author__image" src="<%=require('../../images/author.jpg').default%>" alt="Фотография автора">
@@ -161,4 +124,5 @@
 
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
+
 </html>

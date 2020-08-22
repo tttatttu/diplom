@@ -7,4 +7,16 @@
   text-transform: uppercase;
   color: #b6bcbf;
   margin: 0;
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
 }
+
+@media screen and (max-width: 768px) {
+  .news__paragraph {
+    left: 16px;
+  bottom: 16px;
+  }
+}
+
+

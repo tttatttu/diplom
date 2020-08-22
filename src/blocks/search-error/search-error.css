@@ -6,20 +6,4 @@
   font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
   max-width: 320px;
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-@media screen and (max-width: 768px) {
-  .search-error {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .search-error {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 }
