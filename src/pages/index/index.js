@@ -56,7 +56,7 @@ function searchNews(word) {
       preloader.toggleSearchContainer(true);
     })
 
-    .then((res) => {
+    .then(() => {
       const items = storage.getDataNews();
 
       searchContainer.querySelector(".news__cards").innerHTML = '';
