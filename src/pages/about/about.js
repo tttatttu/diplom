@@ -77,8 +77,10 @@ githubApi.getCommits()
     items.forEach((item) => {
       commitCardList.render(item);
     })
-    initSwiper();
   })
   .catch((err) => {
     console.log('Ошибка. Запрос не выполнен: ', err);
+  })
+  .then(() => {
+    initSwiper();
   });

@@ -14,8 +14,9 @@ import {
   getMonth
 } from '../../js/utils/getMonth';
 
-const news = document.getElementById("totalNews");
-const title = document.getElementById("totalTitle");
+const searchTitle = document.querySelector(".search__title");
+const news = document.querySelector("#totalNews");
+const title = document.querySelector("#totalTitle");
 const templateDate = document.querySelector('#analytics-template').content.querySelector(".tabel__day");
 const tabelSection = document.querySelector(".tabel");
 const containerDates = document.querySelector(".tabel__days");
@@ -51,6 +52,7 @@ tableHeaderMonth();
 // упоминаний в заголовках
 function repeatWors() {
 
+  searchTitle.textContent = "Вы спросили: " + "«" + word + "»";
   news.textContent = items.length;
   title.textContent = statistics.total();
 }

@@ -46,9 +46,15 @@ function searchNews(word) {
 
   newsApi.getNews(word)
     .then((res) => {
-
       storage.setDataNews(res["articles"]);
+    })
+    .catch((err) => {
+      console.log('Ошибка. Запрос не выполнен: ', err);
+      searchInput.setSubmitButtonState(true);
+      preloader.toggleSearchContainer(true);
+    })
 
+    .then((res) => {
       const items = storage.getDataNews();
 
       searchContainer.querySelector(".news__cards").innerHTML = '';
@@ -62,13 +68,9 @@ function searchNews(word) {
         preloader.toggleNewsContainer(true);
         preloader.toggleErrorContiner();
       }
-    })
-    .catch((err) => {
-      preloader.toggleWaitingContainer(true);
-      preloader.toggleErrorContiner();
-
-      console.log('Ошибка. Запрос не выполнен: ', err);
     });
+    event.preventDefault();
+    formSearch.reset();
 }
 
 searchInput.setEventListeners();
