@@ -3,6 +3,7 @@
 @import url(../news/news.css);
 @import url(../author/author.css);
 @import url(./__body/content__body.css);
+@import url(../hidden/hidden.css);
 
 
 .content {

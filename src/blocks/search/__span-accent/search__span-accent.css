@@ -1,4 +1,5 @@
 .search__span-accent {
   font-family: "Roboto";
   font-weight: bold;
+  line-height: initial;
 }

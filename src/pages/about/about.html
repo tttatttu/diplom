@@ -82,66 +82,32 @@
       <div class="history__text content-margin">
         <h2 class="content-title content-title_colour_black content-title_size_x history__title">История коммитов из
           GitHub</h2>
-        <a class="content-subtitle history__link" href="https://github.com/tttatttu" target="_blank">Открыть в Github&thinsp; &nbsp;&rang;</a>
+        <a class="content-subtitle history__link" href="https://github.com/tttatttu" target="_blank">Открыть в
+          Github&thinsp; &nbsp;&rang;</a>
       </div>
 
       <div class="swiper-container">
-        <ul class="swiper-wrapper history__sliders">
-          <li class="swiper-slide history__slider">
-            <p class="history__data">14 августа, 2019</p>
-            <div class="history__autor">
-              <img class="history__image" src="<%=require('../../images/anton.jpg').default%>" alt="аватар">
-              <h2 class="content-title content-title_size_s history__title">Антон Долинин</h2>
-              <p class="history__mail">anton@yandex.ru</p>
-            </div>
-            <p class="history__subtitle">Emmet (formerly Zen Coding) is a web-
-              developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-          </li>
-          <li class="swiper-slide history__slider">
-            <p class="history__data">14 августа, 2019</p>
-            <div class="history__autor">
-              <img class="history__image" src="<%=require('../../images/mariya.jpg').default%>" alt="аватар">
-              <h2 class="content-title content-title_size_s history__title">Мария Фёдорова</h2>
-              <p class="history__mail">mariiifed@yandex.ru</p>
-            </div>
-            <p class="history__subtitle">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans,
-              open Tools >
-              Plugins > Available plugins and find and install Emmet plugin.</p>
-          </li>
-          <li class="swiper-slide history__slider">
-            <p class="history__data">14 августа, 2019</p>
-            <div class="history__autor">
-              <img class="history__image" src="<%=require('../../images/inga.jpg').default%>" alt="аватар">
-              <h2 class="content-title content-title_size_s history__title">Инга Иванова</h2>
-              <p class="history__mail">ingaiva@yandex.ru</p>
-            </div>
-            <p class="history__subtitle">With Emmet, you can type CSS-like expressions
-              that can be dynamically parsed, and produce
-              output depending on what you type in the abb...</p>
-          </li>
-          <li class="swiper-slide history__slider">
-            <p class="history__data">14 августа, 2019</p>
-            <div class="history__autor">
-              <img class="history__image" src="<%=require('../../images/inga.jpg').default%>" alt="аватар">
-              <h2 class="content-title content-title_size_s history__title">Инга Иванова</h2>
-              <p class="history__mail">ingaiva@yandex.ru</p>
-            </div>
-            <p class="content-subtitle history__subtitle">With Emmet, you can type CSS-like expressions
-              that can be dynamically parsed, and produce
-              output depending on what you type in the abb...</p>
-          </li>
-          <li class="swiper-slide history__slider">
-            <p class="history__data">14 августа, 2019</p>
-            <div class="history__autor">
-              <img class="history__image" src="<%=require('../../images/inga.jpg').default%>" alt="аватар">
-              <h2 class="content-title content-title_size_s history__title">Инга Иванова</h2>
-              <p class="history__mail">ingaiva@yandex.ru</p>
-            </div>
-            <p class="content-subtitle history__subtitle">With Emmet, you can type CSS-like expressions
-              that can be dynamically parsed, and produce
-              output depending on what you type in the abb...</p>
-          </li>
-        </ul>
+        <div class="swiper-wrapper history__sliders">
+
+          <ul class="swiper-slide" style="display: flex">
+            <template id="cardgit-template" class="" style="display: none;">
+              <article class="history__template">
+                <li class=" history__slider">
+                  <a class="history__card" href="" target="_blank">
+                    <p class="history__data"></p>
+                    <div class="history__autor">
+                      <img class="history__image" src="" alt="аватар">
+                      <h2 class="content-title content-title_size_s history__title"></h2>
+                      <p class="history__mail"></p>
+                    </div>
+                    <p class="history__subtitle"></p>
+                  </a>
+                </li>
+              </article>
+            </template>
+          </ul>
+
+        </div>
 
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
@@ -181,4 +147,5 @@
 
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
+
 </html>

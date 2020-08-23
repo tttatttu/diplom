@@ -1,5 +1,19 @@
 .news__images {
   width: 100%;
+  height: 272px;
   border-radius: 16px 16px 0 0;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .news__images {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .news__images {
+    height: 196px;
+  }
 }

@@ -39,21 +39,20 @@
       </ol>
     </div>
     <div class="search height-margin content-margin bottom-margin">
-      <h2 class="content-title content-title_size_x content-title_colour_black search__title search__title_analytics">Вы
-        спросили: «Путешествия»</h2>
+      <h2 class="content-title content-title_size_x content-title_colour_black search__title search__title_analytics"></h2>
       <p class="content-subtitle search__subtitle search__subtitle_analytics">Новостей за неделю&colon;&nbsp;<span
-          class="search__span-accent">34 324</span></p>
+          class="search__span-accent" id="totalNews"></span></p>
       <p class="content-subtitle search__subtitle search__subtitle_analytics">Упоминаний в загаловках&colon;&nbsp;<span
-          class="search__span-accent">235</span></p>
+          class="search__span-accent" id="totalTitle"></span></p>
     </div>
   </div>
 
   <main class="content-analytics">
-    <section class="tabel content-margin">
+    <section class="tabel content-margin hidden">
       <h2 class="content-title tabel__title">Аналитика по дням</h2>
       <div class="tabel__analytics">
         <div class="tabel__section">
-          <p class="tabel__subtitle">Дата (август)</p>
+          <p class="tabel__subtitle tabel__month"></p>
           <p class="tabel__subtitle">Кол-во упоминаний</p>
           <ul class="tabel__points">
             <li class="tabel__point">0</li>
@@ -65,48 +64,15 @@
         </div>
 
         <ul class="tabel__days">
-          <li class="tabel__day">
-            <p class="tabel__data">19, пн</p>
-            <figure class="tabel__line" style="width: 15%">
-              <figcaption class="tabel__signature">15</figcaption>
-            </figure>
-          </li>
-          <li class="tabel__day">
-            <p class="tabel__data">20, вт</p>
-            <figure class="tabel__line" style="width: 18%">
-              <figcaption class="tabel__signature">18</figcaption>
-            </figure>
-          </li>
-          <li class="tabel__day">
-            <p class="tabel__data">21, ср</p>
-            <figure class="tabel__line" style="width: 11%">
-              <figcaption class="tabel__signature">11</figcaption>
-            </figure>
-          </li>
-          <li class="tabel__day">
-            <p class="tabel__data">22, чт</p>
-            <figure class="tabel__line" style="width: 39%">
-              <figcaption class="tabel__signature">39</figcaption>
-            </figure>
-          </li>
-          <li class="tabel__day">
-            <p class="tabel__data">23, пт</p>
-            <figure class="tabel__line" style="width: 45%">
-              <figcaption class="tabel__signature">45</figcaption>
-            </figure>
-          </li>
-          <li class="tabel__day">
-            <p class="tabel__data">24, сб</p>
-            <figure class="tabel__line" style="width: 73%">
-              <figcaption class="tabel__signature">73</figcaption>
-            </figure>
-          </li>
-          <li class="tabel__day">
-            <p class="tabel__data">25, вс</p>
-            <figure class="tabel__line" style="width: 34%">
-              <figcaption class="tabel__signature">34</figcaption>
-            </figure>
-          </li>
+
+          <template id="analytics-template" style="display: none;">
+            <li class="tabel__day">
+              <p class="tabel__data"></p>
+              <figure class="tabel__line" style="width: ">
+                <figcaption class="tabel__signature"></figcaption>
+              </figure>
+            </li>
+          </template>
         </ul>
 
         <ul class="tabel__points tabel__points_footer">
