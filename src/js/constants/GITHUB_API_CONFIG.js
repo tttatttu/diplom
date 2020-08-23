@@ -1,4 +1,4 @@
-const serverGitUrl = NODE_ENV === 'development' ? 'https://api.github.com' : 'http://api.github.com';
+const serverGitUrl = NODE_ENV === 'development' ? 'http://api.github.com' : 'https://api.github.com';
 
 export const GITHUB_API_CONFIG = {
   apiURL: serverGitUrl,

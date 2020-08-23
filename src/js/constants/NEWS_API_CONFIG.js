@@ -1,4 +1,4 @@
-const serverUrl = NODE_ENV === 'development' ? 'https://nomoreparties.co/news/v2/everything' : 'http://nomoreparties.co/news/v2/everything';
+const serverUrl = NODE_ENV === 'development' ? 'http://nomoreparties.co/news/v2/everything' : 'https://newsapi.org/v2/everything';
 
 export const NEWS_API_CONFIG = {
   apiURL: serverUrl,

@@ -47,6 +47,8 @@ function searchNews(word) {
   newsApi.getNews(word)
     .then((res) => {
       storage.setDataNews(res["articles"]);
+      // inputWord.value = storage.setDataWord('dataWord');
+
     })
     .catch((err) => {
       console.log('Ошибка. Запрос не выполнен: ', err);
