@@ -1,4 +1,4 @@
-# [News Analyzer](https://tttatttu.github.io/diplom) **
+# [News Analyzer](https://tttatttu.github.io/news_analyzer) **
 Сервис для анализа мировых новостей
 Версия 0.0.1
 
