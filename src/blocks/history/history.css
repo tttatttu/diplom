@@ -3,6 +3,7 @@
 @import url(./__text/history__text.css);
 @import url(./__button/history__button.css);
 @import url(./__card/history__card.css);
+@import url(../swiper/swiper.css);
 
 .history {
   font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;

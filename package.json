@@ -1,6 +1,6 @@
 {
   "name": "news_analizer",
-  "homepage": "https://github.com/tttatttu/diplom",
+  "homepage": "https://github.com/tttatttu/news_analyzer",
   "version": "0.0.1",
   "description": "Анализатор новостей",
   "main": "./src/pages/index/index.js",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tttatttu/diplom.git"
+    "url": "git+https://github.com/tttatttu/news_analyzer.git"
   },
   "author": "Tatiana Malashkina",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tttatttu/diplom/issues"
+    "url": "https://github.com/tttatttu/news_analyzer/issues"
   },
   "devDependencies": {
     "@babel/cli": "7.10.5",

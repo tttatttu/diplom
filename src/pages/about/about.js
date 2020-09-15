@@ -1,6 +1,7 @@
 "use strict";
 
 import "./about.css";
+import 'swiper/swiper-bundle.css';
 import Swiper from "swiper/bundle";
 import GithubApi from '../../js/modules/GithubApi';
 import CommitCard from '../../js/components/CommitCard';
@@ -13,7 +14,7 @@ import {
   patternCardDate
 } from '../../js/utils/patternCardDate';
 
-const gitCardsContainer = document.querySelector(".swiper-slide");
+const gitCardsContainer = document.querySelector(".swiper__wrapper");
 const gitCardTemplate = gitCardsContainer.querySelector('#cardgit-template').content.querySelector(".history__template");
 const githubApi = new GithubApi(GITHUB_API_CONFIG);
 const commitCard = (...arg) => new CommitCard(...arg).create();
@@ -21,25 +22,51 @@ const commitCardList = new CommitCardList(gitCardsContainer, commitCard, gitCard
 const storage = new DataStorage();
 
 function initSwiper() {
-  new Swiper(".swiper-container", {
+  new Swiper(".swiper__container", {
 
-    direction: "horizontal",
-    effect: "slide",
+    slideClass: 'swiper__slide',
+    wrapperClass: 'swiper__wrapper',
+    // direction: "horizontal",
+    // effect: "slide",
+
+    // pagination: {
+    //   el: ".swiper__pagination",
+    //   type: "bullets",
+    //   clickable: true,
+    // },
 
     pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
+      el: '.swiper__pagination',
+      bulletActiveClass: 'swiper__pagination-bullet_active',
+      bulletClass: 'swiper__pagination-bullet',
       clickable: true,
+      type: 'bullets',
     },
 
-    loop: true,
-    grabCursor: true,
-    centeredSlides: true,
+    // loop: true,
+    // grabCursor: true,
+    // centeredSlides: true,
+
+    // navigation: {
+    //   nextEl: ".swiper__button_next",
+    //   prevEl: ".swiper__button_prev",
+    // },
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.swiper__button_next',
+      prevEl: '.swiper__button_prev',
     },
+
+    containerModifierClass: 'swiper__container',
+    slideClass: 'history__slider',
+
+    grabCursor: true,
+    effect: 'slide',
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    slidesOffsetBefore: 8,
+    centeredSlides: true,
+
 
     breakpoints: {
       320: {
@@ -63,6 +90,8 @@ function initSwiper() {
         spaceBetween: 16,
         centeredSlides: true,
       },
+
+
     }
   })
 };

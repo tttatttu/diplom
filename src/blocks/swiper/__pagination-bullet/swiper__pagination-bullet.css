@@ -1,0 +1,14 @@
+.swiper__pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #d1d2d6;
+  margin: 0 4px;
+  display: inline-block;
+  transition: background-color .3s;
+}
+
+.swiper__pagination-bullet:hover {
+  cursor: pointer;
+  background-color: #1a1b22;
+}

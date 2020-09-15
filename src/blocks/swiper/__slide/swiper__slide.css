@@ -1,0 +1,8 @@
+.swiper__slide {
+  pointer-events: none;
+  transform: translate3d(0px, 0, 0);
+  flex-shrink: 0;
+  position: relative;
+  transition-property: transform;
+  transform: translate3d(0px, 0, 0);
+}

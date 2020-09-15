@@ -1,0 +1,27 @@
+@import url(./_next/swiper__button_next.css);
+@import url(./_prev/swiper__button_prev.css);
+
+.swiper__button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 42%;
+  z-index: 10;
+  background-color: rgba(26, 27, 34, 1);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);
+  cursor: pointer;
+  transition: border .2s, background-color .1s;
+  transform: translateY(-50%);
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .swiper__button {
+    display: none;
+  }
+}
