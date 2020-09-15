@@ -15,7 +15,7 @@ import {
 } from '../../js/utils/patternCardDate';
 
 const gitCardsContainer = document.querySelector(".swiper__wrapper");
-const gitCardTemplate = gitCardsContainer.querySelector('#cardgit-template').content.querySelector(".history__template");
+const gitCardTemplate = gitCardsContainer.querySelector('#cardgit-template').content;
 const githubApi = new GithubApi(GITHUB_API_CONFIG);
 const commitCard = (...arg) => new CommitCard(...arg).create();
 const commitCardList = new CommitCardList(gitCardsContainer, commitCard, gitCardTemplate, patternCardDate);
@@ -24,16 +24,9 @@ const storage = new DataStorage();
 function initSwiper() {
   new Swiper(".swiper__container", {
 
+    loop: true,
     slideClass: 'swiper__slide',
     wrapperClass: 'swiper__wrapper',
-    // direction: "horizontal",
-    // effect: "slide",
-
-    // pagination: {
-    //   el: ".swiper__pagination",
-    //   type: "bullets",
-    //   clickable: true,
-    // },
 
     pagination: {
       el: '.swiper__pagination',
@@ -42,15 +35,6 @@ function initSwiper() {
       clickable: true,
       type: 'bullets',
     },
-
-    // loop: true,
-    // grabCursor: true,
-    // centeredSlides: true,
-
-    // navigation: {
-    //   nextEl: ".swiper__button_next",
-    //   prevEl: ".swiper__button_prev",
-    // },
 
     navigation: {
       nextEl: '.swiper__button_next',
@@ -66,7 +50,6 @@ function initSwiper() {
     spaceBetween: 16,
     slidesOffsetBefore: 8,
     centeredSlides: true,
-
 
     breakpoints: {
       320: {
@@ -90,8 +73,6 @@ function initSwiper() {
         spaceBetween: 16,
         centeredSlides: true,
       },
-
-
     }
   })
 };

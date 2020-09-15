@@ -6,15 +6,16 @@
   font-family: "Roboto Slab", "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 400px;
-  min-width: 336px;
-  min-height: 288px;
-  height: 100%;
+  width: 400px;
+  min-height: 240px;
+  /* height: 100%; */
   border-radius: 16px;
-  background: #fff;
+  background-color: #fff;
   padding: 24px;
   box-sizing: border-box;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
@@ -33,3 +34,4 @@
     padding: 16px;
   }
 }
+

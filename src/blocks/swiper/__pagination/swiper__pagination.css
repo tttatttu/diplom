@@ -5,3 +5,9 @@
   margin-top: 48px;
   cursor: default;
 }
+
+@media (max-width: 400px) {
+  .swiper__pagination {
+    margin-top: 16px;
+  }
+}
